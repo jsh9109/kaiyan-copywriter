@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A版 - 夏斑斓风格 | 开言练口才文案</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; color: white; margin-bottom: 20px; font-size: 32px; }
+        .subtitle { text-align: center; color: rgba(255,255,255,0.9); margin-bottom: 40px; font-size: 16px; }
+        .back-btn {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            margin: 0 auto 30px;
+            display: block;
+            width: fit-content;
+            transition: all 0.3s;
+        }
+        .back-btn:hover { background: rgba(255,255,255,0.3); }
+        .export-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .copy-btn:hover {
+            background: #764ba2;
+            transform: translateY(-2px);
+        }
+        .copy-btn.copied { background: #10b981; }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .card-number {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1a1a1a;
+            margin-bottom: 20px;
+        }
+        .content {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.8;
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+        }
+        .tags {
+            color: #667eea;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        .stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px solid #f0f0f0;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-btn">← 返回选择页面</a>
+        <h1>🎨 A版 - 夏斑斓风格（真诚分享型）</h1>
+        <div class="subtitle">标题更叙述、语气像朋友分享、产品自然提及</div>
+        
+        <div class="export-section">
+            <button class="copy-btn" onclick="exportToExcel()" style="background: #10b981; font-size: 16px;">
+                📥 导出为Excel文件
+            </button>
+            <div style="color: white; margin-top: 15px; font-size: 14px; opacity: 0.9;">
+                💡 Excel打开后，正文列自动带段落换行
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第1篇</span>
+                <button class="copy-btn" onclick="copyContent(1)">📋 复制文案</button>
+            </div>
+            <div class="title">逼自己刷练口才小程序，把话说清楚</div>
+            <div class="content" id="content-1">想练表达，却每天都在等一个"有空再说"的时间。
+
+刷手机时能看完好几篇口才干货，轮到自己讲一件事，还是不知道先说哪一句。问题往往就出在这里：眼睛看了很多，嘴巴没怎么练过。
+
+不妨把一小段刷手机的时间，换成刷口才练习。不是再刷几个教你说话的视频，而是打开一段材料，真的出声说一说。
+
+开言练口才小程序，适合拿来做这件事。分类材料、朗读、录音、回听放在一起，不用今天找一篇文章，明天又换一套教程。先选眼下用得上的内容，练习就有了落点。
+
+比如最近总要汇报工作，就先围绕职场表达练。读材料时留意重点放在哪里，再把内容换成自己的工作。别人的句子只是参考，最后要说出来的，是你自己的意思。
+
+录下来听一遍，还能把"我表达不好"变成一个具体问题：是不是铺垫太长？重点有没有放到前面？同一个意思，是不是说了好几遍？
+
+下一次只改其中一处，不用把每次练习都变成一场考试。独处的时候可以练，卡住了也可以停下来重说，不需要有人在旁边等你给出漂亮答案。
+
+手机里可以留一点位置，给真正开口的自己。今天不必练成一个很会说话的人，先把眼前这一件事讲完整。</div>
+            <div class="tags">#练口才 #口才训练 #表达能力 #提升表达能力 #语言表达 #开口表达 #朗读训练 #口才小程序 #职场表达 #说话有条理</div>
+            <div class="stats">
+                <span>📊 字数: 458字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第2篇</span>
+                <button class="copy-btn" onclick="copyContent(2)">📋 复制文案</button>
+            </div>
+            <div class="title">强烈建议大家练复述，先把话讲清楚</div>
+            <div class="content" id="content-2">明明刚看完一篇文章，合上以后，却只剩一句"写得挺有道理"。
+
+具体说了什么，观点怎么展开，为什么让你认同，一张嘴就散了。日常聊天、转述消息、工作汇报，也常遇到同样的问题：内容知道，但组织不出来。
+
+所以真的建议想练口才的人，试试复述。
+
+它不要求你背出原文，而是让你自己做取舍：哪一句是重点，哪些内容用来解释，哪些可以不说。
+
+拿一条活动通知练就行。别从"对方先说了什么、接着又说什么"开始，而是先交代活动是什么，再说时间、地点和需要准备的事。说完检查，对方能不能据此做出安排。
+
+这种练习的价值，在于你得亲手把散着的信息理出顺序。原句可以忘，重要的意思不能丢。不是把文章背熟，而是把它讲给一个没看过的人听。
+
+但练过几次就会发现，找一段合适的材料也挺费事。太长不想开始，太陌生又讲不明白，最后练习时间都花在了挑内容上。
+
+开言练口才小程序里的分类材料，可以接住这一步。挑一段适合当前需要的内容，用朗读熟悉意思，再尝试复述；录音留下来，回听有没有漏掉重点、有没有越讲越远。
+
+工具负责让材料和录音方便找到，组织语言这一步仍然要自己完成。别急着追求词句漂亮，先试着让一个没看过原文的人，也能听懂你在讲什么。</div>
+            <div class="tags">#复述训练 #复述练习 #练口才 #口才训练 #语言组织能力 #表达能力训练 #说话有逻辑 #工作汇报 #说话有条理 #语言表达</div>
+            <div class="stats">
+                <span>📊 字数: 488字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第3篇</span>
+                <button class="copy-btn" onclick="copyContent(3)">📋 复制文案</button>
+            </div>
+            <div class="title">想提升表达能力的宝宝们，可以学一下</div>
+            <div class="content" id="content-3">面试时明明有经历，却只说得出"我做过这个"；开会前准备了很多，轮到发言，又从背景一路讲到细节，迟迟没讲到重点。
+
+如果你也想练表达，可以看看开言练口才小程序。它的用法很直接：按场景选材料，出声练，录下来，再回听。不是让你看完一套理论，自己再想办法找练习内容。
+
+想把话说得更有顺序，可以先练材料里的组织方式。留意它怎么开头，什么时候举例，最后怎样把意思收回来。再换一个自己的话题，试着沿着这个顺序讲，不照背原句。
+
+想改善开口时的停顿和含糊，就选一段能理解的内容朗读。读到不顺的地方先停一下，看看是句子太长，还是没想明白这一段想表达什么，不用为了读完一直赶。
+
+说的时候容易忽略重复，录音回听就派得上用场。同一句话是不是解释了两次？前面说了一个观点，后面有没有给出理由？找到哪一句需要改，比笼统地嫌弃自己的声音更有用。
+
+这些环节可以按自己的需要来用。今天只想把一段发言讲顺，就围绕那一段练，不必把所有场景都刷一遍。
+
+挑练口才的工具时，也可以看它能不能帮你完成一次实际练习，而不只是介绍了多少技巧。
+
+开言练口才放在一起的是材料和练习环节。真正值得留下来的，是你练完以后，终于能具体说出：下一次，我要把哪一句讲得更明白。</div>
+            <div class="tags">#提升表达能力 #表达能力训练 #口才训练 #面试表达 #职场沟通 #开会发言 #语言组织能力 #朗读训练 #录音复盘 #开言练口才</div>
+            <div class="stats">
+                <span>📊 字数: 497字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第4篇</span>
+                <button class="copy-btn" onclick="copyContent(4)">📋 复制文案</button>
+            </div>
+            <div class="title">想提升表达能力的宝宝，可以这样练</div>
+            <div class="content" id="content-4">越是觉得自己不太会说话，越容易在开口前给自己加一道题：这句话够不够聪明？别人会不会觉得我说得很差？
+
+想得越多，原本能说出来的意思，反而被压回去了。
+
+先别急着给自己贴"嘴笨"的标签。能听懂别人怎么表达，和轮到自己时能把话组织出来，中间还隔着练习。就像看得懂路线图，也得自己走一遍，才知道在哪个路口容易弄错。
+
+表达练习也可以把目标放小一点。一次不解决"我以后怎么变得会说话"，只解决"这一件事，我怎样让对方听明白"。
+
+比如想说明一个建议，就把建议本身先交代出来，再补理由和例子。说到一半忘了后面，不用硬撑着绕，停下来整理，再讲一次也算练习。
+
+真正让练习难坚持的，有时并不是这几句话。是想练的时候没有材料，有了材料又不知道适不适合自己；折腾一圈，开口的劲头已经过去了。
+
+开言练口才小程序把分类材料和朗读、录音回听放在一起，适合把准备这一步缩短。先找当前需要的一类，练完留下一段录音，方便之后听回去看自己讲了什么。
+
+听的时候也别只挑毛病。哪一句意思交代完整了，哪一段没有跑远，都可以留下来。还没讲顺的部分，下次再练。
+
+你不需要先成为一个自信的人，才有资格开始练表达。可以先从一段允许停顿、允许重来的练习开始。</div>
+            <div class="tags">#表达能力差怎么提升 #提升表达能力 #开口表达 #口才练习 #表达训练 #语言表达 #沟通表达 #说话有条理 #日常沟通 #开言练口才</div>
+            <div class="stats">
+                <span>📊 字数: 492字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第5篇</span>
+                <button class="copy-btn" onclick="copyContent(5)">📋 复制文案</button>
+            </div>
+            <div class="title">用一个"笨方法"，练自己的表达能力</div>
+            <div class="content" id="content-5">有个练表达的方法，听起来不太厉害：把同一件小事，重新讲一遍。
+
+不是多记几个高级词，也不是给自己的句子套上漂亮开场。先讲清楚发生了什么，为什么值得说，再把最想让人记住的那一点留下来。
+
+可以拿"今天做完了一项工作"来练。第一次可能会讲成流水账：先找资料，又做了表格，中间开了个会，后来把东西交了。
+
+这时候先别往里加词。想一想，听的人更关心什么？如果是进度，就先说做到哪一步；如果是结果，就先说完成了什么；需要支持，再交代具体卡在哪里。
+
+同一件事，对不同的人，重点也会变。这个"笨方法"练的就是自己做判断，而不是把一句现成话术到处套用。
+
+当然，一直拿自己的事练，也会遇到没思路的时候。开言练口才小程序里的分类材料，可以作为另一个起点。先观察一段内容怎样安排重点，再换成自己熟悉的话题，用自己的语言重新说。
+
+朗读是在看它怎么讲，录音则能留下你自己怎么讲。回听时不必从头挑到尾，找到一处"这里说得太绕"，试着删掉没用的铺垫，再讲一次就行。
+
+过程可能没那么新鲜，甚至需要反复。但比起不停寻找下一个诀窍，它至少让今天的练习留下了一段真正由你组织的话。
+
+开言练口才可以用来放材料、做练习；那些话，最后还是要一点点练成自己说得顺的样子。</div>
+            <div class="tags">#表达能力 #练口才和表达能力 #口才练习 #说话有重点 #职场表达 #工作汇报 #语言组织能力 #复述训练 #表达训练 #每日练口才</div>
+            <div class="stats">
+                <span>📊 字数: 501字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <span class="card-number">第6篇</span>
+                <button class="copy-btn" onclick="copyContent(6)">📋 复制文案</button>
+            </div>
+            <div class="title">表达能力差，想练口才的宝宝建议学</div>
+            <div class="content" id="content-6">口才书看了，表达课也听了，为什么遇到一场临时发言，还是不知道怎么说？
+
+先看看自己的练习，究竟停在哪一步。是看别人分析得很有道理，还是已经关掉文字，试着独立讲过？
+
+输入能提供思路，但"轮到自己怎么讲"需要另找时间练。开口以后才会发现，原来一个理由还没解释完整，原来脑子里觉得顺的内容，说出来会跳过好几步。
+
+想开始，又很容易卡在准备上：材料搜了一堆，不知道挑哪篇；今天练汇报，明天看辩论，换得很勤，却说不清自己究竟在解决什么问题。
+
+开言练口才小程序，可以围绕当下最常用的一个场景来用。先选同类材料，再做朗读和录音，不急着把每种表达技巧都学一遍。这样下一次回听时，至少知道自己要看什么。
+
+比如总觉得汇报没重点，就听开头有没有交代进度或结论；总是解释不明白，就听有没有漏掉对方需要的背景。问题越具体，练习越不容易变成一句"我还得努力"。
+
+也不用每练一篇，就给自己换一套方法。把某次录音里没说完整的一段重新讲清楚，本身就是下一次练习的内容。
+
+选择工具之前，可以先问自己：我现在缺的是新知识，还是一个愿意开口、能留下录音并听回去的练习过程？
+
+如果一直停在看，今天就从一小段开始。开言练口才的材料和录音回听，是给这个过程用的；别让又一次认真学习，停在还没有开口的时候。</div>
+            <div class="tags">#表达能力差 #表达能力差怎么提升 #练口才 #提升口才 #口才训练 #语言表达能力 #职场沟通 #工作汇报 #录音复盘 #开言练口才</div>
+            <div class="stats">
+                <span>📊 字数: 519字</span>
+                <span>🎨 风格: 夏斑斓真诚分享型</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        function copyContent(num) {
+            const content = document.getElementById('content-' + num);
+            const button = event.target;
+            const textarea = document.createElement('textarea');
+            textarea.value = content.textContent;
+            document.body.appendChild(textarea);
+            textarea.select();
+            try {
+                document.execCommand('copy');
+                button.textContent = '✅ 已复制';
+                button.classList.add('copied');
+                setTimeout(() => {
+                    button.textContent = '📋 复制文案';
+                    button.classList.remove('copied');
+                }, 2000);
+            } catch (err) {
+                button.textContent = '❌ 复制失败';
+                setTimeout(() => { button.textContent = '📋 复制文案'; }, 2000);
+            }
+            document.body.removeChild(textarea);
+        }
+
+        function exportToExcel() {
+            const data = [];
+            for (let i = 1; i <= 6; i++) {
+                const card = document.querySelectorAll('.card')[i-1];
+                data.push({
+                    num: i,
+                    title: card.querySelector('.title').textContent,
+                    content: document.getElementById('content-' + i).textContent,
+                    tags: card.querySelector('.tags').textContent
+                });
+            }
+
+            const wsData = [['序号', '标题', '正文', '话题']];
+            data.forEach(item => {
+                wsData.push([item.num, item.title, item.content, item.tags]);
+            });
+
+            const wb = XLSX.utils.book_new();
+            const ws = XLSX.utils.aoa_to_sheet(wsData);
+            ws['!cols'] = [{ wch: 6 }, { wch: 40 }, { wch: 80 }, { wch: 50 }];
+
+            const range = XLSX.utils.decode_range(ws['!ref']);
+            for (let row = 1; row <= range.e.r; row++) {
+                const cellAddress = XLSX.utils.encode_cell({ r: row, c: 2 });
+                if (ws[cellAddress]) {
+                    ws[cellAddress].s = { alignment: { wrapText: true, vertical: 'top' } };
+                }
+            }
+
+            XLSX.utils.book_append_sheet(wb, ws, 'A版-夏斑斓风格');
+            XLSX.writeFile(wb, 'kaiyan-A版-' + new Date().toISOString().slice(0,10) + '.xlsx');
+        }
+    </script>
+</body>
+</html>
