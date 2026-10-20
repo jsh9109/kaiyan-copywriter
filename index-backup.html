@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开言练口才文案 - AB测试版</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { text-align: center; color: white; margin-bottom: 40px; font-size: 32px; }
+        .version-selector {
+            background: rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .version-title {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        .version-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .version-btn {
+            background: white;
+            color: #667eea;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .version-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+        .version-btn.a { background: #667eea; color: white; }
+        .version-btn.b { background: #764ba2; color: white; }
+        .info-box {
+            background: rgba(255,255,255,0.95);
+            padding: 25px;
+            border-radius: 10px;
+            color: #333;
+            line-height: 1.8;
+        }
+        .info-box h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+        .info-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .info-box li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        .info-box li:last-child { border-bottom: none; }
+        .highlight { color: #667eea; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 开言练口才文案 - AB测试版</h1>
+        
+        <div class="version-selector">
+            <div class="version-title">📊 选择测试版本</div>
+            <div class="version-buttons">
+                <a href="version-a.html" class="version-btn a">A版 - 夏斑斓风格（真诚分享型）</a>
+                <a href="version-b.html" class="version-btn b">B版 - 产品推荐风格（清晰转化型）</a>
+            </div>
+            
+            <div class="info-box">
+                <h3>📌 版本说明</h3>
+                <ul>
+                    <li><span class="highlight">A版特点：</span>标题更叙述、语气像朋友真诚分享、产品自然提及、不刻意推销</li>
+                    <li><span class="highlight">B版特点：</span>标题更直接痛点、功能介绍清晰、产品推荐明确、转化导向强</li>
+                    <li><span class="highlight">测试建议：</span>两版同时发布，追踪点击、阅读、转化数据，选择表现更好的风格</li>
+                    <li><span class="highlight">去同质化：</span>两版都遵循6个不同角度、6种植入方式、6种结尾类型，避免平台限流</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
